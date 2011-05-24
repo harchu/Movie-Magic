@@ -1,3 +1,10 @@
 /*
  * Copyrights (c) 2011 by Rohit Harchandani and Risha Chheda
+ * 
+ * Usage is subject to a common creative license found here: http://creativecommons.org/licenses/by-nc-sa/3.0/ 
+ * which grants permission for educational and experimental use. 
+ * If you wish to deploy an application that uses the code of MovieMagic, you must get permission. 
+ * (We currently grant permission for deployments at no charge but we want to keep track of who has deployed 
+ * and ensure you understand this software is without support or warrantee.)
+ * 
  */

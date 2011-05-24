@@ -7,7 +7,7 @@ upload photos of actors, actresses, movies etc. It also allows users to start a 
 To implement this website we have used the Model-View-Controller (MVC) design pattern. This design pattern was chosen to help understand the benefits of creating a high compartmentalized and clean website, so that scaling it in the future would be easy. 
 
 Model:
-
+To make the interface with the underlying data model as clean as possible, the various entities represented in the database are modeled as Data Beans. The attributes of these data beans correspond to the columns of the database and each instance represents a record in the corresponding table. Also Data Access Objects (DAOs) are used to access the underlying database. These DAOs consist of various operations such as lookup, insert, delete etc. which can be called by the various Actions. This interface gives the flexibility to change only these DAOs if in the future csv files are used or some other types of databases are used to store the data.
 
 View:
 All the views are mainly coded in jsp. We have a template-bottom.jsp and a template-top.jsp which are by default included in all other views. These 2 JSP's provide the top and bottom design of the website which remains common throughout the website.

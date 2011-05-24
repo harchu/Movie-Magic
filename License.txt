@@ -1,3 +1,0 @@
-/*
- * Copyrights (c) 2011 by Rohit Harchandani and Risha Chheda
- */

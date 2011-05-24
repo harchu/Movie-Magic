@@ -1,1 +1,32 @@
 Movie Magic Website
+
+This is a movie portal which tries to incorporate movies in the social networking platform. 
+It allows users to write on each others wall post, rate movies, read their reviews, upload trailers of movies,
+upload photos of actors, actresses, movies etc. It also allows users to start a blog, play movie puzzles among other things.
+
+To implement this website we have used the Model-View-Controller (MVC) design pattern. This design pattern was chosen to help understand the benefits of creating a high compartmentalized and clean website, so that scaling it in the future would be easy. 
+
+Model:
+
+
+View:
+All the views are mainly coded in jsp. We have a template-bottom.jsp and a template-top.jsp which are by default included in all other views. These 2 JSP's provide the top and bottom design of the website which remains common throughout the website.
+
+Controller:
+There is one main Controller.java servlet which re-directs all incoming queries to appropriate Actions. Any new action to be created has to be added to the static hashmap of the Action.java class. 
+
+Actions:
+All the actions that a client can perform on the website like creating an account, signing into his account, uploading pictures, etc have their own action.java classes. All these actions inherit the parent Action.java abstract base class. 
+1 object of each of these classes is added to the static hashmap "hash" in the Action.java class. This is done so that when a client request comes in the controller can use this hashmap to identify which actions perform() function to call. 
+
+
+FormBeans:
+To compartmentalize the error checking of all incoming data that the client sends to the server, the formbeans have been created. For example, if you look at the /formbeans/LoginForm.java, all the items that the user populated in the login page will be filled into an object of this class. Then the getValidationErrors() function will be called which will tell us if the user has tried to send it any junk data or not. By creating a whole different set of classes just for error checking, we make the overall design of the website much more scalable and clean. 
+
+
+We have used the Prof. Jeffrey L. Eppinger's BeanFactory tools to implement the databeans which communicate with the database. 
+
+
+We would like to thank Prof. Jeffrey L. Eppinger without whose proper guidance and BeanFactory tools this website would not have been possible. 
+
+This site is still under construction, please come back to check for more.

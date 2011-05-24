@@ -10,7 +10,7 @@ Model:
 To make the interface with the underlying data model as clean as possible, the various entities represented in the database are modeled as Data Beans. The attributes of these data beans correspond to the columns of the database and each instance represents a record in the corresponding table. Also Data Access Objects (DAOs) are used to access the underlying database. These DAOs consist of various operations such as lookup, insert, delete etc. which can be called by the various Actions. This interface gives the flexibility to change only these DAOs if in the future csv files are used or some other types of databases are used to store the data.
 
 View:
-All the views are mainly coded in jsp. We have a template-bottom.jsp and a template-top.jsp which are by default included in all other views. These 2 JSP's provide the top and bottom design of the website which remains common throughout the website.
+All the views are mainly coded in jsp. We have a template-bottom.jsp and a template-top.jsp which are by default included in all other views. These 2 JSP's provide the top and bottom design of the website which remains common throughout the website. At places we have tried to use JSTL so as to eliminate all sorts of Java code from these jsp files. This still requires further work and should be done in the near future.
 
 Controller:
 There is one main Controller.java servlet which re-directs all incoming queries to appropriate Actions. Any new action to be created has to be added to the static hashmap of the Action.java class. 

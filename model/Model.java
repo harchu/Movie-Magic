@@ -1,5 +1,5 @@
 /*
- * Copyrights © 2011 by Rohit Harchandani and Risha Chheda
+ * Copyrights ï¿½ 2011 by Rohit Harchandani and Risha Chheda
  *
  * Please refer to root level license.txt file 
  * for entire license. 
@@ -35,7 +35,6 @@ public class Model {
 
 	public Model(ServletConfig config) throws ServletException {
 		try {
-			System.out.println("yoyo");
 			String jdbcDriver = config.getInitParameter("jdbcDriverName");
 			String jdbcURL    = config.getInitParameter("jdbcURL");
 			

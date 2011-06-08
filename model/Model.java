@@ -2,7 +2,7 @@
  * Copyrights � 2011 by Rohit Harchandani and Risha Chheda
  *
  * Please refer to root level license.txt file 
- * for entire license. 
+ * to view entire license. 
  */
 package model;
 
